@@ -1,0 +1,12 @@
+{
+  "name": "cpp-docker",
+  "scripts": {
+    "compose": "docker-compose -f ./docker-compose.yml -p cpp-docker",
+    "build": "yarn compose build",
+    "sh": "yarn compose run cpp sh",
+    "r": "yarn compose run cpp sh -c 'g++ ${0} -o a.out; ./a.out'",
+    "clean": "yarn compose down -v --rmi all"
+  },
+  "private": true,
+  "dependencies": {}
+}
