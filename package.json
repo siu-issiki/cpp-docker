@@ -4,8 +4,8 @@
     "compose": "docker-compose -f ./docker-compose.yml -p cpp-docker",
     "build": "yarn compose build",
     "sh": "yarn compose run cpp sh",
-    "r": "yarn compose run cpp sh -c 'g++ ${0} -o a.out; ./a.out'",
-    "clean": "yarn compose down -v --rmi all"
+    "r": "yarn compose run cpp sh -c 'g++ ${0} -o a.out; ./a.out; rm a.out'",
+    "clean": "yarn compose down -v --rmi all; rm a.out"
   },
   "private": true,
   "dependencies": {}
