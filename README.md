@@ -1,17 +1,33 @@
 > C++ runner on Docker
 
 # Usage
+
 ## image build
+
 ```
-$ yarn build
+$ make
+```
+
+## project setup
+
+```
+$ make new path=ABC173/A
 ```
 
 ## run
+
 ```
-$ yarn r hello-world.cpp
+$ make run
+```
+
+## test
+
+```
+$ make test
 ```
 
 ## clean
+
 ```
-$ yarn clean
+$ make clean
 ```

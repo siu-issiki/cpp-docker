@@ -1,6 +1,10 @@
 .DS_Store
 .vscode
 
+*.in
 *.out
 *.cpp
 
+# src/*
+!src/sample/*
+tmppath
