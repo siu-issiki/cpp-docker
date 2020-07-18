@@ -26,8 +26,17 @@ $ make run
 $ make test
 ```
 
+## switch project
+
+```
+$ make set path=ABC173/A
+```
+
 ## clean
 
 ```
 $ make clean
 ```
+
+For more information, please see Makefile.
+https://github.com/siu-issiki/cpp-docker/blob/master/Makefile
